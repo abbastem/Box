@@ -11,11 +11,11 @@ void start::Print(BOXData A) {
     for (int i = A.getSizeB() - 1; i >= 0; --i) {
         if (A.getArrayB()[i] != 0) {
             if (i == 0) {
-                std::cout << A.getArrayB()[i] << " ";
+                std::cout << " " << A.getArrayB()[i] << " ";
                 continue;
             }
-            std::string Q = (A.getArrayB()[i - 1] > 0) ? " + " : " ";
-            std::cout << A.getArrayB()[i] << "X^" << i << Q;
+            std::string Q = (A.getArrayB()[i - 1] > 0) ? " +" : " ";
+            std::cout << " " << A.getArrayB()[i] << "X^" << i << Q;
         }
     }
 
@@ -24,11 +24,11 @@ void start::Print(BOXData A) {
     for (int i = A.getSizeM() - 1; i >= 0; --i) {
         if (A.getArrayM()[i] != 0) {
             if (i == 0) {
-                std::cout << A.getArrayM()[i] << " ";
+                std::cout << " " << A.getArrayM()[i] << " ";
                 continue;
             }
-            std::string Q = (A.getArrayM()[i - 1] > 0) ? " + " : " ";
-            std::cout << A.getArrayM()[i] << "X^" << i << Q;
+            std::string Q = (A.getArrayM()[i - 1] > 0) ? "+ " : " ";
+            std::cout << " " << A.getArrayM()[i] << "X^" << i << Q;
         }
     }
     std::cout << "\n\n";

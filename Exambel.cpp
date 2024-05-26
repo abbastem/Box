@@ -16,12 +16,12 @@ void Exambel::Start_Exambel() {
     std::string F = "Feedback";
 
 
-    float ab1[]{1, 3};
+    float ab1[]{1, 4};
     int sizeAB1 = sizeof(ab1) / sizeof(ab1[0]);
     float am1[]{2};
     int sizeAM1 = sizeof(am1) / sizeof(am1[0]);
 
-    float ab2[]{1, 3};
+    float ab2[]{1,5};
     int sizeAB2 = sizeof(ab2) / sizeof(ab2[0]);
     float am2[]{3};
     int sizeAM2 = sizeof(am2) / sizeof(am2[0]);
